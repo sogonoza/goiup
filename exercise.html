@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Goiup</title>
+    <style>
+      @import "./styles/style.scss";
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__icon">
+        <a href="./index.html">
+          <figure><img src="./img/logo.png" alt="logo" /></figure>
+        </a>
+      </div>
+    </header>
+
+    <section class="page__title">
+      <div>
+        <p class="page__title-en"></p>
+        <p class="page__title-ja"></p>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="flashcard">
+        <div class="flashcard__box">
+          <div class="flashcard__card flashcard__card-front">
+            <p
+              class="flashcard__card-content flashcard__card-content-front"
+            ></p>
+          </div>
+          <div class="flashcard__card flashcard__card-back">
+            <p class="flashcard__card-content flashcard__card-content-back">
+              <ruby>
+                赤
+                <rt>あか</rt>
+              </ruby>
+            </p>
+          </div>
+        </div>
+        <div class="flashcard__pagination">
+          <button class="flashcard__pagination-btn flashcard__pagination-prev">BACK</button>
+          <span class="flashcard__pagination-text"></span>
+          <button class="flashcard__pagination-btn flashcard__pagination-next">NEXT</button>
+        </div>
+      </div>
+      <div class="answer">
+        <p class="answer__title">Please click the correct answer</p>
+
+        <div class="answer__box">
+          <div class="answer__box-item" id="answer__box-1">
+          </div>
+          <div class="answer__box-item " id="answer__box-2">
+          </div>
+          <div class="answer__box-item" id="answer__box-3">
+          </div>
+          <div class="answer__box-item" id="answer__box-4">
+          </div>
+        </div>
+      </div>
+      <div class="buttonBox">
+        <div class="buttonBox__top"><button type="button" onclick="location.href='./index.html'"> ＜ Go back to TOP</button></div>
+        <div id="buttonFin" class="buttonBox__fin"><button type="button" >Finish ＞ </button></div>
+      </div>
+
+      <!-- modal content -->
+      <div id="scoremodal" class="scoremodal">
+        <div class="scoremodal__content">
+          <span class="scoremodal__close">&times;</span>
+          <p class="scoremodal__title">Your score</p>
+          <div class="scoremodal__score"><span class="scoremodal__score-user"></span> / <span class="scoremodal__score-max"></span></div>
+          <div class="scoremodal__buttonBox">
+            <div class="scoremodal__buttonBox-again"><button onClick="window.location.reload();" type="button"> ＜ Try again</button></div>
+            <div class="scoremodal__buttonBox-top"><button type="button" onclick="location.href='./index.html'" >Go back to TOP ＞ </button></div>
+          </div>    
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__icon">
+        <figure><img src="./img/logo.png" alt="logo" /></figure>
+      </div>
+    </footer>
+    <script type="module" src="./js/controller/exercise.js" /></script>
+  </body>
+</html>

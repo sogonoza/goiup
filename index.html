@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Goiup</title>
+    <style>
+      @import "./styles/style.scss";
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__icon">
+        <a href="index.html">
+          <figure><img src="img/logo.png" alt="logo" /></figure>
+        </a>
+      </div>
+    </header>
+    <div class="fv">
+      <figure><img src="img/firstview.png" alt="first view" /></figure>
+    </div>
+    <div class="category">
+      <div class="category__title">
+        <h2>CATEGORY</h2>
+      </div>
+
+      <div class="tabs">
+        <div class="tabs__links">
+          <button
+            class="tabs__link tabs__link-1 tabs__link-active"
+            data-tab="1"
+          >
+            名詞(noun)
+          </button>
+          <button class="tabs__link tabs__link-2" data-tab="2">
+            動詞(verb)
+          </button>
+          <button class="tabs__link tabs__link-3" data-tab="3">
+            形容詞(adjective)
+          </button>
+        </div>
+        <div
+          id="noun"
+          class="tabs__content tabs__content-1 tabs__content-active"
+        >
+          <ul class="tabs__list tabs__list-noun"></ul>
+        </div>
+        <div id="verb" class="tabs__content tabs__content-2">
+          <ul class="tabs__list tabs__list-verb"></ul>
+        </div>
+        <div id="adj" class="tabs__content tabs__content-3">
+          <ul class="tabs__list tabs__list-adj"></ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__icon">
+        <figure><img src="img/logo.png" alt="logo" /></figure>
+      </div>
+    </footer>
+    <script type="module" defer src="./js/controller/index.js" /></script>
+  </body>
+</html>
