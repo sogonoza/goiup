@@ -53,6 +53,10 @@ const shuffle = function (array, num) {
 const newData = shuffle(currentCategoryData, 10);
 const currentData = newData[currentPage - 1];
 
+const newFeatures = function () {
+  console.log("aaa");
+};
+
 //display
 const initCard = async function () {
   if (currentPage < 11) {
@@ -63,6 +67,7 @@ const initCard = async function () {
     btnControl();
     displayAnswer();
     await addSmallResult();
+    newFeatures();
   }
 };
 
