@@ -111,7 +111,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "npx -p parcel-bundler parcel build index.html --dist-dir ./dist"
+    "build": "npx -p parcel-bundler parcel build index.html"
   },
   "author": "",
   "license": "ISC",
