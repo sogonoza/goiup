@@ -5,7 +5,11 @@
   },
   "name": "goiup",
   "version": "1.0.0",
-  "default": "js/controller/index.js",
+  "default": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "main": false
+  },
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.5",
     "acorn": "^8.8.2",
@@ -102,7 +106,8 @@
     "v8-compile-cache": "^2.3.0",
     "weak-lru-cache": "^1.2.2",
     "xxhash-wasm": "^0.4.2",
-    "yaml": "^1.10.2"
+    "yaml": "^1.10.2",
+    "fracty": "^1.0.9"
   },
   "scripts": {
     "start": "parcel index.html",
