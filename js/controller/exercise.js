@@ -68,6 +68,8 @@ const initCard = async function () {
     displayAnswer();
     await addSmallResult();
     newFeatures();
+
+    console.log("OK...?");
   }
 };
 
